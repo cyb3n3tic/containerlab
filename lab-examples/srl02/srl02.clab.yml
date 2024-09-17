@@ -15,4 +15,6 @@ topology:
       kind: bridge
   links:
     - endpoints: ["srl1:e1-1", "srl2:e1-1"]
+    - endpoints: ["srl1:e1-2", "br1:e1-2"]
+    - endpoints: ["srl2:e1-2", "br1:e1-3"]
     
