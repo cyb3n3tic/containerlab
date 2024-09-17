@@ -11,6 +11,8 @@ topology:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux
       startup-config: srl2.cfg
-
+    br1:
+      kind: bridge
   links:
     - endpoints: ["srl1:e1-1", "srl2:e1-1"]
+    
