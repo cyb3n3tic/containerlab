@@ -24,6 +24,8 @@ topology:
       kind: "linux"
     client4:
       kind: "linux"
+    br1:
+      kind: bridge
 
   links:
     # wan1 <-> wan2 connections
@@ -54,6 +56,7 @@ topology:
 
     # client connections
     - endpoints: ["client1:eth1", "wan1:e1-9"]
+    - endpoints: ["client1:eth2", "br1:e1-2"]
     - endpoints: ["client2:eth1", "wan2:e1-9"]
     - endpoints: ["client3:eth1", "wan3:e1-7"]
     - endpoints: ["client4:eth1", "wan4:e1-7"]
